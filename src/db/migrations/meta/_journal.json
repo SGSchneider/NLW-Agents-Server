@@ -8,6 +8,13 @@
       "when": 1752042574943,
       "tag": "0000_complex_sentinels",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1752086975014,
+      "tag": "0001_special_proteus",
+      "breakpoints": true
     }
   ]
 }
