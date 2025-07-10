@@ -16,9 +16,18 @@ await seed(db, schema).refine((f) => {
           minDate: new Date('2025-01-01'),
         }),
       },
+      with: {
+        questions: 5,
+      },
     },
     questions: {
-      count: 20,
+      columns: {
+        question: f.city(),
+        createdAt: f.date({
+          maxDate: new Date(),
+          minDate: new Date('2025-01-01'),
+        }),
+      },
     },
   };
 });
